@@ -862,11 +862,13 @@ address,
 }
 
 .form-field {
-  padding: 11px 12px;
-  margin-bottom: 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 100%;
+  padding: 11px 12px 11px 42px;
+  border: 1px solid;
+  border-color: rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .form-comments {
@@ -908,6 +910,23 @@ text-decoration: underline;
 color: var(--accent-color);
 }
 
+.form-field:focus + .form-icon {
+fill: var(--accent-color);
+}
+
 .form-field:focus {
-border-color: var(--accent-color);
+outline-color: var(--accent-color);
+}
+
+.form-conteiner {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: #212121;
 }

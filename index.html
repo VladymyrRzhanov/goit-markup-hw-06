@@ -424,18 +424,35 @@
                 </svg>
             </button>
             <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-            <form class="modal-form" action="">
+            <form class="modal-form" autocomplete="off">
                 <label class="form-title" for="name">Имя</label>
-                <input class="form-field" type="text" name="username" id="name">
+                <div class="form-conteiner">
+                    <input class="form-field" type="text" name="username" id="name">
+                    <svg class="form-icon" width="12" height="12">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </div>
                 <label class="form-title" for="phone">Телефон</label>
-                <input class="form-field" type="tel" name="phone" id="phone">
+                <div class="form-conteiner">
+                    <input class="form-field" type="tel" name="phone" id="phone">
+                    <svg class="form-icon" width="13" height="13">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
                 <label class="form-title" for="mail">Почта</label>
-                <input class="form-field" type="email" name="mail" id="mail">
+                <div class="form-conteiner">
+                    <input class="form-field" type="email" name="mail" id="mail">
+                    <svg class="form-icon" width="15" height="12">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                </div>
                 <label class="form-title" for="comments">Комментарий</label>
                 <textarea class="form-field form-comments" name="comments" id="comments" placeholder="Введите текст"></textarea>
+                
                 <div class="consent-field">
                     <input class="check" type="checkbox" name="consent" id="consent">
                     <label for="consent">Соглашаюсь с рассылкой и принимаю <a class="consent-link" href="">Условия договора</a></label>
+
                 </div>
                 <button button class="form-button button" type="submit">Отправить</button>
             </form>
