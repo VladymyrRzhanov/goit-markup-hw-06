@@ -887,8 +887,7 @@ address,
   border-color: rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  outline-color: rgba(33, 33, 33, 0.2);
-  transition: outline-color var(--transition-duration)
+  transition: border-color var(--transition-duration)
     var(--transition-timing-function);
   cursor: pointer;
 }
@@ -973,7 +972,8 @@ address,
 }
 
 .form-field:focus {
-  outline-color: var(--accent-color);
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .form-conteiner {
