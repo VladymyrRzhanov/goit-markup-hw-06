@@ -666,7 +666,7 @@ footer {
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
 }
 
@@ -710,6 +710,7 @@ address,
 
 .footer-social {
   margin-right: 93px;
+  margin-left: auto;
 }
 
 .social-title {
