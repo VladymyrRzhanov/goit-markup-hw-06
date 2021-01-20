@@ -100,6 +100,8 @@ li {
 
 .menu-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-items {
@@ -147,6 +149,8 @@ li {
 
 .contacts-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
 }
 
@@ -325,6 +329,8 @@ li {
 
 .work-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-item {
@@ -374,6 +380,8 @@ li {
 
 .employee-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .employee-items {
@@ -455,6 +463,7 @@ li {
 
 .clients-list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -523,6 +532,7 @@ li {
 .category {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -559,6 +569,8 @@ li {
 
 .projects-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   flex-basis: calc(100% / 3-30px);
 }
@@ -654,6 +666,7 @@ footer {
 
 .footer {
   display: flex;
+  justify-content: flex-start;
   align-items: baseline;
 }
 
@@ -707,6 +720,8 @@ address,
 
 .social-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-list > li {
@@ -764,6 +779,7 @@ address,
 
 .email-button {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 10px 28px 10px 29px;
 }
@@ -895,6 +911,7 @@ address,
 
 .consent-field {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
