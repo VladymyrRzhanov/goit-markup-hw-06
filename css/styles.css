@@ -868,6 +868,9 @@ address,
   border-color: rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline-color: rgba(33, 33, 33, 0.2);
+  transition: outline-color var(--transition-duration)
+    var(--transition-timing-function);
   cursor: pointer;
 }
 
@@ -892,30 +895,65 @@ address,
 
 .consent-field {
   display: flex;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   font-size: 14px;
-  line-height: 1.71
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color:  var(--text-color);
+  color: var(--text-color);
 }
 
-.consent-field .check {
+.icon {
   margin-right: 7px;
 }
 
+.check {
+  margin-right: 7px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+}
+
+.icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid;
+  border-color: var(--heading-color);
+  border-radius: 2px;
+  background-color: transparent;
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    border-color var(--transition-duration) var(--transition-timing-function),
+    background-image var(--transition-duration)
+      var(--transition-timing-function);
+}
+
+.check:checked + .icon {
+  background-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+
 .consent-link {
-text-decoration: underline;
-color: var(--accent-color);
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 
 .form-field:focus + .form-icon {
-fill: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .form-field:focus {
-outline-color: var(--accent-color);
+  outline-color: var(--accent-color);
 }
 
 .form-conteiner {
@@ -929,4 +967,5 @@ outline-color: var(--accent-color);
   left: 15px;
   transform: translateY(-50%);
   fill: #212121;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
