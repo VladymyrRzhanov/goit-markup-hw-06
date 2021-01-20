@@ -881,6 +881,19 @@ address,
   flex-direction: column;
 }
 
+.form-conteiner {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: #212121;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
 .form-title {
   margin-bottom: 4px;
   font-size: 12px;
@@ -933,10 +946,6 @@ address,
   color: var(--text-color);
 }
 
-.icon {
-  margin-right: 7px;
-}
-
 .check {
   margin-right: 7px;
   position: absolute;
@@ -949,6 +958,7 @@ address,
 .icon {
   width: 16px;
   height: 15px;
+  margin-right: 7px;
   border: 2px solid;
   border-color: var(--heading-color);
   border-radius: 2px;
@@ -983,18 +993,4 @@ address,
 .form-field:focus {
   outline: none;
   border-color: var(--accent-color);
-}
-
-.form-conteiner {
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.form-icon {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  fill: #212121;
-  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
